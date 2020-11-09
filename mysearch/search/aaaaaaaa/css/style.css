@@ -1,0 +1,230 @@
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    /* -----------theam colors----------------------- */
+    --text-grey:#3f4954;
+    --mid:#3d5a80;
+
+/* -------------------gradient-color------------------ */
+
+    --sky:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+/*---------------- global classess ----------------------*/
+a{
+    text-decoration: none;
+    color: var( --text-grey);
+}
+
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+
+h2{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.5rem;
+}
+
+.container{
+    margin: 0.5vw;
+}
+/* 
+button.btn{
+   border: none;
+   border-radius: 2rem;
+   padding: 1rem 3rem;
+   font-size: 1rem;
+   font-family: Arial, Helvetica, sans-serif;
+   cursor: pointer;
+} */
+
+/*---------------- global classess ----------------------*/
+
+
+/*-------------------navbar---------------------- */
+.nav
+{
+    background:white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse
+{
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    cursor: pointer;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .nav-items{
+   
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover{
+   background-color:var(--mid)
+}
+.nav .nav-items .nav-link:hover a{
+    color: white;
+ }
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+}
+
+
+.nav .social i{
+    padding:0.2rem;
+}
+
+.nav .social i:hover{
+    color:whitesmoke;
+}
+
+
+/*-------------------navbar---------------------- */
+
+/*-------------------- media query------------------------ */
+@media only screen and (max-width:750px)
+{
+    .nav .nav-menu,.nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+
+
+/*------------------------------- main content */
+
+/* ---------------------------site title */
+main .site-title
+{
+    background:url(../assets/travel/blogger.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* position: relative; */
+}
+
+main .site-title .site-background{
+    /* padding-top: -0.5rem; */
+    /* margin-top: -500px; */
+    padding: .5rem  ;
+    text-align: center;
+    color: black;
+}
+/* /* main .site-title .searchbar 
+{
+    /* float: right; 
+    margin-left: 45rem;
+    margin-top: -5rem;
+    background-color: aqua;
+    height: auto;
+} */
+main .site-title h1,h2{
+    margin: .3rem;
+}
+  /* -------------------------------blog carousel */
+/* main .blog{ */
+    /* background: url('../assets/images10.jpg'); */ 
+    /* background-color: rgba(195, 216, 255, 0.651); */
+    /* background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%; */
+/* } */
+
+main .blog .blog-post{
+   padding-top: 6rem;
+}
+
+main .blog-post .blog-content{
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(160, 18, 18, 0.2);
+   
+}
+.title-search-result
+{
+    display: flex;
+    flex-direction: column;
+
+}
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+/* 
+main .blog-content .btn-blog{
+    padding: 7rem 2rem;
+    background-color: aquamarine;
+    margin: .5rem; 
+} */
+/* ------------------*--------------blog carousel */
+/* ----------------------------site Content ------------------------*/
+    main .site-content{
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+/* -----------------*-----------site Content -------------*-----------*/
+
+/* -------------------------sidebar --------------------------*/
+.site-content > .sidebar.category-list{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* --------------*-----------sidebar ---------------*-----------*/
+
+/* ----------------*-----------------main content */
